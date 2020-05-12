@@ -1,0 +1,15 @@
+cd /opt/fit2cloud-demo
+echo going to start app
+nohup python -m SimpleHTTPServer 8888 > log.txt 2>&1 &
+
+sleep 3
+processesNum=`ps aux | grep SimpleHTTPServer | grep 8888 | grep -v grep | wc -l | sed 's/ //g'`
+#ps aux | grep SimpleHTTPServer  | grep 8888 | grep -v grep
+echo process number is ------------$processesNum
+if [ "$processesNum" == "1" ];then
+    echo app started!
+    exit 0
+else
+    echo app start failed!
+    exit 1
+fi
