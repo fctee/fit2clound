@@ -38,9 +38,8 @@
 		</plugins>
 	</build>
 
-	<!-- <distributionManagement> -->
-		<!-- Publish the versioned releases here -->
-		<!-- <repository>
+	<!-- <distributionManagement>
+		<repository>
 			<id>fit2cloud-example</id>
 			<name>Fit2Cloud Example Release</name>
 			<url>http://172.16.100.2:8080/nexus/content/repositories/releases/</url>
