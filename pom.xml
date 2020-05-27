@@ -38,9 +38,9 @@
 		</plugins>
 	</build>
 
-	<distributionManagement>
+	<!-- <distributionManagement> -->
 		<!-- Publish the versioned releases here -->
-		<repository>
+		<!-- <repository>
 			<id>fit2cloud-example</id>
 			<name>Fit2Cloud Example Release</name>
 			<url>http://172.16.100.2:8080/nexus/content/repositories/releases/</url>
@@ -49,10 +49,10 @@
 			<id>fit2cloud-example</id>
 			<url>http://172.16.100.2:8080/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>			
-	</distributionManagement>
+	</distributionManagement> -->
 
 	<!-- download artifacts from this repo -->
-	<repositories>
+<!--	<repositories>
 		<repository>
 			<id>fit2cloud-public</id>
 			<name>Fit2Cloud Public Repository</name>
@@ -64,10 +64,10 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-	</repositories>
+	</repositories> -->
 
 	<!-- download plugins from this repo -->
-	<pluginRepositories>
+	<!-- <pluginRepositories>
 		<pluginRepository>
 			<id>fit2cloud-public</id>
 			<name>Fit2Cloud Public Repository</name>
@@ -79,5 +79,5 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</pluginRepository>
-	</pluginRepositories>
+	</pluginRepositories> -->
 </project>
